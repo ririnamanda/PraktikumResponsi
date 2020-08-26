@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/namaDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/imageDet"
+        android:layout_centerHorizontal="true"
+        android:text="COUNTRY"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txsemb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Sembuh : "
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/txposi"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/txposi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Positif : "
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/txmeni"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/txmeni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Meninggal : "
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

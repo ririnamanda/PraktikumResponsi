@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/white"
+            android:hint="Email"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/passLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="Passsword"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txRegis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar akun baru"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/LL"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progresBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="LOGIN"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+Nama aplikasi : Tugas.apk
+nama package : com.example.tugas
+
+akun Firebase : email - Ririyohann@gmail.com
+		password - Tugasmobile20
+
+API : https://corona.lmao.ninja/v3/covid-19/countries
+	Data yang diambil : -Nama Negara (country)
+			    -Bendera Negara (flag)
+			    -Jumlah kasus (cases)
+			    -Jumlah yang sembuh (recovered)
+			    -Jumlah meninggal (deaths)

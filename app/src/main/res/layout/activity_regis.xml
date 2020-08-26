@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisActivity">
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/emailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/passReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="Passsword"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/repassReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="Re-Passsword"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pBRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bRegis"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"/>
+
+    <Button
+        android:id="@+id/bRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Registrasi"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
